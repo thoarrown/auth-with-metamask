@@ -1,18 +1,57 @@
 {
-  "private": true,
+  "version": "0.0.1",
+  "author": {
+    "email": "thoarrown@gmail.com",
+    "name": "ThoArrow",
+    "url": "https://thoarrow.com"
+  },
+  "private": false,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "SKIP_PREFLIGHT_CHECK=true TSC_COMPILE_ON_ERROR=true ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src/**/*.tsx src/**/*.ts"
   },
   "dependencies": {
-    "next": "^12.0.8",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.4.2",
+    "axios": "^0.26.0",
+    "js-cookie": "^3.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-query": "^3.34.15",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^8.2.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@types/axios": "^0.14.0",
+    "@types/js-cookie": "^3.0.1",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
     "eslint": "8.7.0",
-    "eslint-config-next": "^12.0.8"
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-next": "^12.0.8",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "4.4.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "singleQuote": false
   }
 }
